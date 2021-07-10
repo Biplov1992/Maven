@@ -8,9 +8,14 @@ public class PracticeAction {
 	
   @Test
   public void f() {
+	   
   }
   @BeforeMethod
-  public void beforeMethod() {
+  public void launch() {
+	  
+	  System.setProperty("webdriver.gecko.driver","F:\\Software\\Drivers\\geckodriver.exe");
+	   WebDriver driver = new FirefoxDriver();
+	   driver.manage().window().maximize();
   }
 
   @AfterMethod
